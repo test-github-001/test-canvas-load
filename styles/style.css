@@ -1,0 +1,81 @@
+@font-face {
+    font-family: Audiowide;
+    src: url(../src/fonts/Audiowide-Az09.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000000;
+    overflow: hidden;
+
+    font-family: Audiowide, Arial, sans-serif;
+    color: #00ff00;
+    /**/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+#loadingStatusBar {
+    position: relative;
+    box-sizing: border-box;
+    width: 204px;
+    height: 24px;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    background-color: #777777;
+    overflow: hidden;
+}
+
+#loadingStatusText {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    line-height: 20px;
+}
+
+#loadingStatusLine {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #DDDDDD;
+}
+
+#loadingReadyButton {
+    box-sizing: border-box;
+    width: 204px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 32px;
+    background-color: #777777;
+    cursor: pointer;
+    transition: color .6s ease-in-out, background-color .6s ease-in-out;
+}
+#loadingReadyButton:hover {
+    color: #555555;
+    background-color: #aaaaaa;
+}
