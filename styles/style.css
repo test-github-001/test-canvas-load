@@ -40,6 +40,7 @@ body {
 }
 
 #loadingStatusText {
+    font-family: Arial, sans-serif;
     position: relative;
     z-index: 1;
     box-sizing: border-box;
@@ -63,6 +64,7 @@ body {
 }
 
 #loadingReadyButton {
+    font-family: Arial, sans-serif;
     box-sizing: border-box;
     width: 204px;
     height: 64px;
