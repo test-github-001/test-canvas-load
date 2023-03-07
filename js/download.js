@@ -65,8 +65,8 @@ function updateLoadingProgress() {
     uploadSize--;
     loadingProgress += loadingStep;
     loadingStatusText.innerText = 'Loading ' + loadingProgress.toFixed() + ' %';
-    loadingStatusLine.style.width = loadingProgress.toFixed(1) * 2 + '%';
-    if (uploadSize < 1) loadingDone();
+    loadingStatusLine.style.width = loadingProgress.toFixed() + '%';
+    //if (uploadSize < 1) loadingDone();
 }
 
 const SOUNDS_ARR = [];
